@@ -1,0 +1,421 @@
+@font-face{
+    font-family: nb;
+    src:url(media/NBInternationalProBoo.ttf)
+}
+@font-face{
+    font-family: heading;
+    src:url(media/Rejouice-Headline.ttf)
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: nb;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#page1{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: rgb(209, 169, 169); */
+    position: relative;
+}
+#cursor{
+    height: 7.5vw;
+    width: 7.5vw;
+    background-color: #FF5F38;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%,-50%);
+    /* animation-delay: 0.3s; */
+    transition: all linear 0.1s;
+}
+#cursor h5{
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+#page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+#page1-content{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(0, 0, 0); */
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+nav{
+    /* height: 100px; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* background: red; */
+    padding: 3vw 3vw;
+}
+nav h3{
+    font-size: 1.4vw;
+    font-weight: 100;
+    /* font-family: 'Rejouice Healine'; */
+}
+nav h4{
+    font-size: 1.4vw;
+    font-weight: 100;
+}#page1-content h1{
+    font-size: 27vw;
+    font-weight: 100;
+    font-family: heading;
+    line-height: 30vw;
+}
+#page1-content h1 span{
+    font-family: heading;
+}
+#page2{
+    height: 100vh;
+    width: 100vw;
+    padding: 2.7vw;
+    z-index: 10;
+    /* background-color: red; */
+}
+#page2 #header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 5vw;
+    padding: 1vw 0vw;
+    /* background-color: pink; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    margin-top: 3vw;
+    overflow: hidden;
+}
+#page2 #header h2{
+    font-size: 1.7vw;
+    font-weight: 100;
+    line-height: 0.5vw;
+}
+#page2 #page2-content h2{
+    font-size: 4.5vw;
+    font-weight: 100;
+    line-height: 5vw;
+}
+#page3{
+    min-height: 100vh;
+    width: 100% ;
+    padding: 3vw;
+    position: relative;
+    /* background-color: pink; */
+    position: relative;
+    /* overflow: hidden; */
+}
+#page3-top{
+    /* background-color: red; */
+    text-align: center;
+}
+#page3-top h4{
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    font-weight: 500;
+}
+#page3-top h4 span{
+    font-size: 0.7vw;
+    font-weight: 500;
+    background-color: #000;
+    padding: 4px 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+#page3-top h2{
+    font-size: 4vw;
+    font-weight: 500;
+}
+#page3-elements{
+    height: 85vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 8vw;
+    /* align-items: end; */
+    overflow: hidden;
+    /* margin-bottom: 8vw; */
+}
+#page3-elements #element-header{
+    height: 10%;
+    width: 100%;
+    /* background-color: rgb(190, 137, 137); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+#page3-elements #element-header #left{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    /* background-color: pink; */
+    overflow: hidden;
+}
+#left h2{
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+#page3-elements #element-header #right{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 15%;
+    /* background-color: pink; */
+    overflow: hidden;
+    padding-left: 4.67vw;
+}
+#right h2{
+    font-size: 1.6vw;
+    font-weight: 400;
+    text-align: left;
+}
+#page3-elements #container{
+    display: flex;
+    /* height: 100%; */
+    /* width: 100%; */
+    /* background-color: blue; */
+    overflow: hidden;
+    position: relative;
+    justify-content: space-between;
+    /* margin-bottom: 8vw; */
+}
+#page3-elements #container .box{
+    height: 100%;
+    width: 32.5%;
+    /* display: flex;
+    object-fit: cover;
+    object-position: center; */
+    overflow: hidden;
+    position: relative;
+}
+#page3-elements #container .box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#page3-elements .box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: linear 0.4s;
+}
+#page3-elements .box:hover img{
+    opacity: 0;
+}
+/* #page3 #text-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 5vw;
+    width: 100%;
+    margin-top: 5vw;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+    
+}
+#page3 #page3-content h2{
+    font-size: 4.5vw;
+    font-weight: 100;
+    line-height: 5vw;
+} */
+
+#page3 #text-heading{
+    display: flex;
+    flex-direction: column;
+    line-height: 0.1vw;
+    width: 100%;
+    height: 5vw;
+    padding: 1vw 0vw;
+    /* background-color: rgb(163, 111, 120); */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    margin-top: 3vw;
+    overflow: hidden;
+}
+#page3 #text-heading h2{
+    font-size: 1.4vw;
+    font-weight: 100;
+    line-height: 1.8vw;
+}
+
+#page3 #page3-content span h2{
+    font-size: 4.42vw;
+    font-weight: 100;
+    line-height: 5vw;
+    word-spacing: -4.2px;
+}
+
+
+#page4{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    padding: 4vw 0;
+}
+#page4 h1{
+    font-size: 9vw;
+    font-family: heading;
+    font-weight: 100;
+    border-bottom: 1px solid #000;
+    width: 96%;
+    margin-left: 2%;
+}
+#swiperdiv{
+    height: 60vh;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    margin-top: -4%;
+}
+.swiper {
+    width: 130%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 19%;
+    object-fit: cover;
+  }
+
+
+#footer{
+    height: 100vh;
+    width: 100%;
+    background-color: #0E0E0E;
+    padding: 3vw;
+    padding-top: 3vw;
+}
+#headcontainer{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#headcontainer .left{
+    height: 100%;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+.left h4{
+    font-size: 2vw;
+    margin-bottom: 1vw;
+    font-weight: 100;
+    color: #D1CFC6;
+}
+.left a{
+    width: 10vw;
+    padding: 1.5vw 2vw;
+    font-weight: 100;
+    text-decoration: none;
+    border: 1px solid #414141;
+    border-radius: 8px;
+    color: #D1CFC6;
+    transition:  all ease 0.3s;
+}
+.left a:hover{
+    background-color: #D1CFC6;
+    color: #000;
+}
+#headcontainer .right{
+    height: 100%;
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1vw;
+}
+.right #rleft{
+    height: 100%;
+    width: 50%;
+    text-align:start;
+}
+#rleft h4{
+    font-size: 1.2vw;
+    color: #D1CFC6;
+    font-weight: 100;
+}
+.right #rright{
+    height: 100%;
+    width: 50%;
+    text-align: end;
+}
+#rright h4{
+    font-size: 1.2vw;
+    color: #D1CFC6;
+    font-weight: 100;
+}
+#mid-container{
+    height: 8vh;
+    width: 100%;
+    margin-top: 5vw;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+#midleft{
+    height: 100%;
+    width: 18vw;
+    padding-top: 0.5vw;
+}
+#midleft h4{
+    font-size: 1.2vw;
+    font-weight: 100;
+    color: #D1CFC6;
+}
+#midright{
+    height: 100%;
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#midright h4{
+    font-size: 1.2vw;
+    font-weight: 100;
+    color: #D1CFC6;
+}
+#btmcontainer{
+    height: 40vh;
+    width: 100%;
+    margin-top: 1.5vw;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+#btmcontainer h1{
+    font-size: 27vw;
+    font-weight: 100;
+    font-family: heading;
+    
+    color: #D1CFC6;
+}
